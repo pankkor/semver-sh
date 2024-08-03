@@ -11,19 +11,19 @@ semver_is_valid() {
 }
 
 # Get MAJOR version
-# semver has to be valid (semveri_is_valid)
+# semver has to be valid (semver_is_valid)
 semver_major() {
     echo "$1" | sed -e "s/${semver_regex}/\1/g"
 }
 
 # Get MINOR version
-# semver has to be valid (semveri_is_valid)
+# semver has to be valid (semver_is_valid)
 semver_minor() {
     echo "$1" | sed -e "s/${semver_regex}/\2/g"
 }
 
 # Get PATCH version
-# semver has to be valid (semveri_is_valid)
+# semver has to be valid (semver_is_valid)
 semver_patch() {
     echo "$1" | sed -e "s/${semver_regex}/\3/g"
 }
