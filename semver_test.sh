@@ -1,9 +1,9 @@
 #!/bin/sh
 
+# NOTE: test_util is not included in this repo
 . ./test_util/test_util.sh.inc
 
-# under test
-. ../installer/semver.sh.inc
+. ../installer/semver.sh
 
 testSemverIsValid() {
 	test_expect      semver_is_valid "0.0.0"
